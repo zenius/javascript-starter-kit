@@ -4,7 +4,7 @@
   "description": "project setup guidelines for javascript projects",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "start": "node buildScripts/src-server.js"
   },
   "repository": {
     "type": "git",
