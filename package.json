@@ -4,7 +4,9 @@
   "description": "project setup guidelines for javascript projects",
   "main": "app.js",
   "scripts": {
-     "start": "node buildScripts/src-server.js"
+    "prestart": "node buildScripts/start-message.js",
+    "start": "node buildScripts/src-server.js",
+    "poststart": "node buildScripts/post-message.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/zenius/javascript-starter-kit#readme",
   "devDependencies": {
+    "chalk": "2.4.2",
     "express": "4.17.1",
     "open": "6.4.0"
   }
