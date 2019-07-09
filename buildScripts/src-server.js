@@ -1,8 +1,8 @@
-const express = require('express');
-const path = require('path');
+import express from 'express';
+import path from 'path';
 
 // open the site in the browser
-const open = require('open');
+import open from 'open';
 
 // choose port available for you
 const port = 3000;
