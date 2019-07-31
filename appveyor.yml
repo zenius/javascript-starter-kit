@@ -1,0 +1,18 @@
+environment:
+  matrix:
+    - nodejs_version: '10'
+
+install:
+  # Get the latest stable version of Node.js
+  - ps: Install-Product node $env:nodejs_version
+
+  # Install node modules
+  - npm install
+
+test_script:
+    - node --version
+    - npm --version
+    # Run tests
+    - npm test
+
+build: off
